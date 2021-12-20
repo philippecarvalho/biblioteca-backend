@@ -15,6 +15,6 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "nodemon source/server.ts",
+    "dev": "nodemon source/server.ts"
   }
 }
