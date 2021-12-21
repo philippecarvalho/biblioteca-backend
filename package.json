@@ -9,13 +9,14 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
     "mongoose": "^6.1.2",
-    "mongoose-auto-increment": "^5.0.1",
+    "mongoose-auto-increment": "^5.0.1"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.15"
   },
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "nodemon source/server.ts",
-    "build": "yarn && yarn start"
+    "dev": "nodemon source/server.ts"
   }
 }
