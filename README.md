@@ -18,9 +18,7 @@
 
 * [Devchallenge](#devchallenge) 
 * [Desafio](#desafio)
-* [Techs](#techs)
-* [Como começar](#como-começar)
-* [Compartilhe](#compartilhe)
+* [Techs utilizadas](#techs)
 
 # Devchallenge
 <a href="https://devchallenge.now.sh/"> DevChallenge</a> permite que você evolua suas skills como programador! Participe da nossa <a href="https://discord.gg/yvYXhGj">comunidade</a> o/
@@ -35,23 +33,10 @@ Seu desafio é criar o backend para um sistema de gerenciamento de uma bibliotec
 <b>[PUT] </b> /obras/:id: : A rota deverá atualizar as informações de titulo, editora, foto e autores da obra com o id presente nos parâmetros da rota<br><br>
 <b>[DELETE] </b> /obras/:id: : A rota deverá deletar a obra com o id presente nos parâmetros da rota<br>
 
-
-# Techs: 
-- Tecnologia que preferir :)
-
-# Como começar:
-1 - Use esse template (clicando em Use this template) ou faça um fork deste repositório com o código inicial<br>
-2 - Leia as instruções no readme.md<br>
-3 - Comece a codar! Sinta-se livre para utilizar o fluxo de trabalho que ache mais confortável<br>
-4 - Compartilhe seu resultado com a comunidade! #devchallenge
-
-
-# Compartilhe!
-Inicie seu projeto utilizando esse template no seu github como um repositório público<br>
-Faça um print, gif ou vídeo e compartilhe o resultado com a #devchallenge ou marcando nosso perfil @devchallenge!<br>
-
-Desafio criado por  <a href="https://www.linkedin.com/in/lorenagmontes/">Lorena</a> :)
-
+# Techs utilizadas: 
+- Node.js
+- Express
+- Mongoose
 
 # Comunidade DevChallenge
 Site: https://www.devchallenge.com.br/ <br>
