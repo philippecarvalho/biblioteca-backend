@@ -8,7 +8,9 @@ const swaggerFile = require('./swagger.json')
 const mongoose = require('mongoose');
 mongoose.connect(process.env.DB_URL);
 
-app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerFile))
+app.use('/', swaggerUi.serve);
+app.get('/', swaggerUi.setup(swaggerFile));
+
 
 app.use(express.json());
 app.use('/obras', obrasRoutes);
