@@ -1,0 +1,129 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "biblioteca-phcarvalho.herokuapp.com",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/obras": {
+      "get": {
+        "tags": [
+          "Biblioteca DevChallenge"
+        ],
+        "summary": "Lista todas as obras cadastradas",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Biblioteca DevChallenge"
+        ],
+        "summary": "Adiciona uma obra",
+        "description": "A rota recebe titulo, editora, foto, e autores dentro do corpo da requisição. Ao cadastrar um novo projeto, ele deverá ser armazenado dentro de um objeto",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "titulo": {
+                  "example": "Harry Potter e a Pedra Filosofal"
+                },
+                "editora": {
+                  "example": "Rocco"
+                },
+                "foto": {
+                  "example": "https: //i.imgur.com/UH3IPXw.jpg"
+                },
+                "autores": {
+                  "example": "[\"JK Rowling\", \"...\"]"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "obras/{id}": {
+      "get": {
+        "tags": [
+          "Biblioteca DevChallenge"
+        ],
+        "summary": "Lista uma obra específica",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Biblioteca DevChallenge"
+        ],
+        "summary": "Atualiza uma obra específica",
+        "description": "A rota atualiza as informações de titulo, editora, foto e autores da obra com o id presente nos parâmetros da rota",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Biblioteca DevChallenge"
+        ],
+        "summary": "Remove uma obra específica",
+        "description": "A rota deleta a obra com o id presente nos parâmetros da rota",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {}
+}
