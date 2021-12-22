@@ -19,6 +19,7 @@
 * [Devchallenge](#devchallenge) 
 * [Desafio](#desafio)
 * [Techs utilizadas](#techs)
+* [Acesse a api](https://biblioteca-phcarvalho.herokuapp.com/)
 
 # Devchallenge
 <a href="https://devchallenge.now.sh/"> DevChallenge</a> permite que você evolua suas skills como programador! Participe da nossa <a href="https://discord.gg/yvYXhGj">comunidade</a> o/
@@ -32,6 +33,10 @@ Seu desafio é criar o backend para um sistema de gerenciamento de uma bibliotec
 <b>[GET] </b> /obras/ : A rota deverá listar todas as obras cadastradas<br><br>
 <b>[PUT] </b> /obras/:id: : A rota deverá atualizar as informações de titulo, editora, foto e autores da obra com o id presente nos parâmetros da rota<br><br>
 <b>[DELETE] </b> /obras/:id: : A rota deverá deletar a obra com o id presente nos parâmetros da rota<br>
+
+# Solução do desafio
+* [Acesse a api](https://biblioteca-phcarvalho.herokuapp.com/)
+
 
 # Techs utilizadas: 
 - Node.js

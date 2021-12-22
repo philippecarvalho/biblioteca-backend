@@ -63,7 +63,7 @@
         }
       }
     },
-    "obras/{id}": {
+    "/obras/{id}": {
       "get": {
         "tags": [
           "Biblioteca DevChallenge"
